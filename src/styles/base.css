@@ -1,0 +1,68 @@
+:root {
+  --ts:          #FF5C00;
+  --ts-mid:      #FF7A2E;
+  --ts-pale:     #FFF0E6;
+  --ts-bdr:      rgba(255,92,0,.18);
+  --cream:       #FAF7F2;
+  --cream-2:     #F4F0E8;
+  --cream-3:     #EDE7DA;
+  --card:        #FFFFFF;
+  --ink:         #1A1410;
+  --ink-mid:     #4A3F35;
+  --ink-muted:   #9A8E82;
+  --ink-faint:   #C8BFB5;
+  --green:       #1A7A52;
+  --green-bg:    #EAF6F0;
+  --green-bdr:   rgba(26,122,82,.2);
+  --amber:       #B05E00;
+  --amber-bg:    #FFF5E6;
+  --amber-bdr:   rgba(176,94,0,.2);
+  --red:         #C0392B;
+  --red-bg:      #FDF0EE;
+  --red-bdr:     rgba(192,57,43,.2);
+  --blue:        #1A5FA8;
+  --blue-bg:     #EEF4FC;
+  --blue-bdr:    rgba(26,95,168,.2);
+  --border:      rgba(0,0,0,.07);
+  --border-mid:  rgba(0,0,0,.11);
+  --shadow-sm:   0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:   0 4px 16px rgba(0,0,0,.07),0 1px 4px rgba(0,0,0,.04);
+  --font-body:   'DM Sans', sans-serif;
+  --font-mono:   'DM Mono', monospace;
+  --font-serif:  'Playfair Display', serif;
+}
+
+*,*::before,*::after { box-sizing:border-box;margin:0;padding:0 }
+a { text-decoration:none }
+button { cursor:pointer;border:none;background:transparent;font-family:inherit }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width:5px }
+::-webkit-scrollbar-track { background:var(--cream) }
+::-webkit-scrollbar-thumb { background:var(--cream-3);border-radius:3px }
+
+@keyframes pulseGreen {
+  0%,100%{ box-shadow:0 0 0 0 rgba(26,122,82,.4) }
+  50%    { box-shadow:0 0 0 4px rgba(26,122,82,0) }
+}
+@keyframes pulseOrange {
+  0%,100%{ box-shadow:0 0 0 0 rgba(255,92,0,.4) }
+  50%    { box-shadow:0 0 0 4px rgba(255,92,0,0) }
+}
+@keyframes fadeRight {
+  from{ opacity:0;transform:translateX(-10px) }
+  to  { opacity:1;transform:translateX(0) }
+}
+@keyframes fadeUp {
+  from{ opacity:0;transform:translateY(10px) }
+  to  { opacity:1;transform:translateY(0) }
+}
