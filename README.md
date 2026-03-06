@@ -111,12 +111,10 @@ npm run build        # Production build
 
 ---
 
-## What I'd build next
-
-If this were a real internal tool:
+## If this were a real internal tool:
 
 - **Webhook integration** — Topsort can push events; real-time updates via Server-Sent Events instead of polling
-- **Alert routing** — Severity thresholds trigger Slack/PagerDuty via the same n8n patterns I've used for client integrations
+- **Alert routing** — Severity thresholds trigger Slack/PagerDuty via the same n8n patterns 
 - **Historical ROAS** — Pull from `/v2/reports` to show P(conv) accuracy trends over time, not just current drop rate
 - **Multi-region latency** — Edge server latency broken down by region (ANZ vs Europe vs US) to surface cold-start issues in new markets
 
@@ -124,6 +122,6 @@ If this were a real internal tool:
 
 ## About
 
-Built by **Hana Pham** — Software Engineer at Cloud Native, Sydney.
+
 
 References: [docs.topsort.com](https://docs.topsort.com) · [github.com/Topsort](https://github.com/Topsort) · [topsort.js SDK](https://github.com/Topsort/topsort.js)
